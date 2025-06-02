@@ -31,7 +31,7 @@ A clean, user-friendly To-Do List web application built using **HTML**, **CSS (B
 ---
 
 ##  Project Structure
-project-folder/
+'''To_Do_List/
 ├── index.html
 ├── style/
 │ └── main.css
@@ -40,7 +40,7 @@ project-folder/
 ├── assets/
 │ └── icons/
 │   └── icons8-to-do-list-32.png
-
+'''
 
 ## Customization
 Modify background colors, font styles, and priority colors in style/main.css.
