@@ -1,0 +1,151 @@
+/* Background gradient for entire page */
+html, body {
+  background-color: #accecd;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling for a card-like effect */
+.container {
+  background-color: #ffffffdd;
+  padding: 30px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Heading styles */
+h1 {
+  font-weight: 700;
+  color: #00796b;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Input group enhancements */
+.input-group input.form-control,
+.input-group select.form-select {
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input.form-control:focus,
+.input-group select.form-select:focus {
+  border-color: #004d40;
+  box-shadow: 0 0 8px #004d40aa;
+  outline: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #00796b;
+  border-color: #00796b;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #004d40;
+  box-shadow: 0 5px 15px rgba(0,77,64,0.4);
+}
+
+/* List item hover effects */
+.list-group-item {
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #b2dfdb;
+  transform: translateX(5px);
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Priority colors with background highlight */
+.priority-High {
+  color: #d32f2f;
+  font-weight: 700;
+  background-color: #ffcdd2;
+  padding: 2px 6px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px #b71c1c;
+}
+
+.priority-Medium {
+  color: #f57c00;
+  background-color: #ffe0b2;
+  padding: 2px 6px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px #ef6c00;
+}
+
+.priority-Low {
+  color: #388e3c;
+  background-color: #c8e6c9;
+  padding: 2px 6px;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px #1b5e20;
+}
+
+/* Completed tasks - subtle but clear */
+.completed {
+  opacity: 0.5;
+  font-style: italic;
+}
+
+/* Action buttons */
+.btn-sm {
+  transition: transform 0.2s ease;
+}
+
+.btn-sm:hover {
+  transform: scale(1.1);
+}
+
+/* Sort label */
+.form-label {
+  font-weight: 600;
+  color: #00796b;
+  user-select: none;
+}
+
+/* Dropdown submenu arrow */
+.dropdown-submenu > .dropdown-toggle::after {
+  color: #00796b;
+  font-weight: 700;
+}
+
+/* Scrollbar for lists if content too long */
+#toDoList, #doneList {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+#toDoList::-webkit-scrollbar,
+#doneList::-webkit-scrollbar {
+  width: 8px;
+}
+
+#toDoList::-webkit-scrollbar-thumb,
+#doneList::-webkit-scrollbar-thumb {
+  background-color: #00796b99;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767px) {
+  .container {
+    padding: 20px 15px;
+  }
+  .input-group {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .input-group input.form-control,
+  .input-group select.form-select,
+  .input-group button {
+    flex: 1 1 100%;
+  }
+}
